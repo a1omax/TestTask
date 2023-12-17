@@ -86,7 +86,7 @@ public class CalculatorDB {
         }
     }
 
-    // Todo:
+
 
     public void createEquation(String equation) {
         try (Connection connection = connectToPostgresDatabase()){

@@ -102,7 +102,7 @@ public class MathAssistant {
             return;
         }
 
-        // Todo: check in db
+
 
         HashMap<String, Double> variables = new HashMap<String, Double>();
         double parameterValue;
