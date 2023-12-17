@@ -17,13 +17,6 @@ public class Token implements Comparable<Token> {
         this.endPosition=endPosition;
     }
 
-    Token(TokenName tokenName, String content){
-        this.tokenName = tokenName;
-        this.content = content;
-        this.startPosition = -1;
-        this.endPosition = -1;
-    }
-
     public int getStartPosition() {
         return startPosition;
     }

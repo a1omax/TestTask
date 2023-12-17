@@ -30,7 +30,7 @@ abstract public class LexicalAnalyzer {
             formula = fillArrayWithTokens(formula, TOKEN_NAMES[i], tokens);
         }
         formula = formula.replace(REPLACE_STRING, "");
-        if (formula.length() != 0) {
+        if (!formula.isEmpty()) {
             throw new IncorrectFormulaException("Characters:  " + formula + "  are not acceptable");
         }
 
@@ -163,7 +163,6 @@ abstract public class LexicalAnalyzer {
         }
 
         if (!errors.toString().equals("")) {
-            //System.err.println(errors);
             throw new LexicalException(errors.toString());
         }
     }
